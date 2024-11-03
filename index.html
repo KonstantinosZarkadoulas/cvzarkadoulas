@@ -9,75 +9,111 @@
             font-family: Arial, sans-serif;
             line-height: 1.6;
             margin: 20px;
+            background: linear-gradient(to bottom right, #b3e5fc, #fff9c4); /* Light blue to light yellow gradient */
         }
         h1 {
             text-align: center;
         }
         .content {
             margin-top: 20px;
+            background-color: white; /* White background for content */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
+        }
+        .section-title {
+            font-weight: bold;
+            font-size: 1.2em; /* Increase font size */
+            margin-top: 20px;
+        }
+        .content p {
+            margin: 0.8em 0;
+        }
+        .content p span.section-title {
+            display: block;
+            margin-bottom: 5px;
+        }
+        /* Styling for custom bullet */
+        .bullet-list {
+            list-style-type: none;
+            padding-left: 0;
+        }
+        .bullet-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 0.5em;
+        }
+        .bullet-list li::before {
+            content: "■"; /* Square bullet */
+            color: #00796b; /* Dark teal color */
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
         }
     </style>
 </head>
 <body>
     <h1>CV of Konstantinos Zarkadoulas</h1>
     <div class="content">
-        <p>
-            NAME: KONSTANTINOS ZARKADOULAS<br>
-        </p>
-<p>
-PERSONAL INFORMATION<br>
-	Phone: (+30)6976080207, (+30)2103467942<br>
-	e-mail: kon.zarkadoulas@gmail.com <br>
-	Linkedin: https://www.linkedin.com/in/konstantinos-zarkadoulas-6a727360/<br>
-</p>
- <p>       
-EDUCATION<br>
-	2022 – Today, Hellenic Open University, Pervasive and Mobile Computing Systems Msc<br>
-	2004 – 2009, Technological Educational Institute of Crete (current HMU-Heraklion), Department of Electrical Engineering<br>
-</p>
-        <p>
-WORK EXPERIENCE<br>
-	OCTOBER 2021 – TODAY, PRISMA ELECTRONICS SA, Electrical Engineer, Study and Implementation of IoT system in shipping  <br>
-(P. Faliro – Greece). https://www.laros.gr/index.php#data<br>
-	OCTOBER 2018 – SEPTEMBER 2021, Quality Assurance, SELECTRON SA, Study, design, manufacture, assembly, regulation, installation of electronic systems and automation control systems. Level - pressure sensors. Temperature sensors. Viscosity meters. For marine and industrial applications.<br> 
-Design and manufacture of new ATEX/IECEx products. In charge of technical procedures and works. In charge of the Quality Control System ISO 9001:2015 and the incorporated ISO/IEC 80079-34. Internal Auditor. Safety Instructor. <br>
-(Piraeus – Greece). www.selectron.gr<br>
-	MAY 2014 – OCTOBER 2018, Electrical Engineer, SELECTRON SA, Study, design, manufacture, assembly, regulation, installation of electronic systems and automation control systems. Level - pressure sensors. Temperature sensors. Viscosity meters.<br>
-	DECEMBER 2013 – MAY 2014, Work placement (Internship), Electrical Engineer, C&A STAVROS KASSIDIARIS S.A., Electrical Engineer working on automation and control systems for marine vessels and industry.<br>
-	SEPTEMBER 2012 – MARCH 2013, Electrical Engineer, GMC Photovoltaic and Metal Constructions, Electrical Engineer in Photovoltaic parks construction.<br>
-	SEPTEMBER 2010 – MARCH 2011, Electrical Engineer (stage), Internship in the laboratory “L2eP” of the USTL University, Research in power electronics control drivers, Lille – France<br>
-    </p>
-<p>
-COMPUTER SKILLS<br>
-	Working knowledge in C programming language, Basic knowledge in SQL and Python <br>
-	2d Autocad, Matlab/Simulink, N.I. Labview,  Eagle PCB Design software, PSPICE circuit simulation software <br>
-	MS Word, Excel, PowerPoint, Outlook, Visio<br>
-</p>
-        <p>
-PROFESSIONAL EDUCATION SEMINARS & CONFERENCES<br>
-	INTERNET OF THINGS AND MACHINE LEARNING APPLICATIONS, University of Athens Continuing Education and Lifelong Learning, April 2021 (75 hours)<br>
-	DESIGNING DATABASE SOLUTIONS FOR MICROSOFT SQL SERVER, Seminar organized from KEEE Certified by TUV HELLAS, March 2021 (100 hours)<br>
-	WEB DEVELOPMENT: HTML5 & JAVASCRIPT, University of Athens Continuing Education and Lifelong Learning, December 2020 – February 2021<br>
-	EMC Design for Compliance (Immunity and Emissions), Online Training, EMC FASTPASS, July 2020<br>
-	AUTODESK/AUTOCAD, Training and certification in 2d Autocad, Education Center ComputerStart, March 2020<br>
-	EU Demands for CE Marking-Technical Documentation-RoHs, Seminar: Labor S.A., October 2019<br>
-	CE MARKING, Online Seminar, Lloyd’s Register, July 2019<br>
-	ATEX – Special Seminar for Ex protection in industrial sites, TUV Austria, April 2019<br>
-	ISO 9001:2015 Appreciation and Interpretation – ISO 9001:2015 Internal Quality Auditor, Lloyd’s Register, March 2019<br>
-	ECDL, Ms Word-Excel-PowerPoint-Outlook 2007, December 2014 <br>
-        </p>
-        <p>
-PARTICIPATION IN R&D PROJECTS<br>
-	Part of R&D project “sPrismoid”, Prisma Electronics collaboration with NTUA, Digitalization and data acquisition of marine vessel’s shaft parameters<br>
-	Part of R&D department of SELECTRON SA, Design of new digital level – pressure sensors with ATEX/IECEx certification and EMC compliance<br>
-	Work placement in L2eP laboratory, Topic: “Control gate circuits of SiC-JFET”, March 2011<br>
-    </p>
-        <p>
-FOREIGN LANGUAGES<br>
-	English – Certificate in Proficiency in English ECPE (C2) University of Michigan<br>
-	French – Basic knowledge (B1)<br>
+        <p><span class="section-title">NAME:</span> KONSTANTINOS ZARKADOULAS</p>
 
-        </p>
+        <p><span class="section-title">PERSONAL INFORMATION</span></p>
+        <ul class="bullet-list">
+            <li>Phone: (+30)6976080207, (+30)2103467942</li>
+            <li>Email: kon.zarkadoulas@gmail.com</li>
+            <li>LinkedIn: <a href="https://www.linkedin.com/in/konstantinos-zarkadoulas-6a727360/" target="_blank">https://www.linkedin.com/in/konstantinos-zarkadoulas-6a727360/</a></li>
+        </ul>
+
+        <p><span class="section-title">EDUCATION</span></p>
+        <ul class="bullet-list">
+            <li>2022 – Today, Hellenic Open University, Pervasive and Mobile Computing Systems MSc</li>
+            <li>2004 – 2009, Technological Educational Institute of Crete (current HMU-Heraklion), Department of Electrical Engineering</li>
+        </ul>
+
+        <p><span class="section-title">WORK EXPERIENCE</span></p>
+        <ul class="bullet-list">
+            <li>OCTOBER 2021 – TODAY, PRISMA ELECTRONICS SA, Electrical Engineer, Study and Implementation of IoT system in shipping
+            (P. Faliro – Greece). <a href="https://www.laros.gr/index.php#data" target="_blank">https://www.laros.gr</a></li>
+            <li>OCTOBER 2018 – SEPTEMBER 2021, Quality Assurance, SELECTRON SA, Design and manufacture of new ATEX/IECEx products, Internal Auditor, Safety Instructor.
+            (Piraeus – Greece). <a href="https://www.selectron.gr" target="_blank">https://www.selectron.gr</a></li>
+            <li>MAY 2014 – OCTOBER 2018, Electrical Engineer, SELECTRON SA, Design and installation of control systems.</li>
+            <li>DECEMBER 2013 – MAY 2014, Electrical Engineer, C&A STAVROS KASSIDIARIS S.A., Automation and control systems for marine and industry.</li>
+            <li>SEPTEMBER 2012 – MARCH 2013, Electrical Engineer, GMC Photovoltaic and Metal Constructions, Photovoltaic parks construction.</li>
+            <li>SEPTEMBER 2010 – MARCH 2011, Electrical Engineer, USTL University, Power electronics research, Lille – France</li>
+        </ul>
+
+        <p><span class="section-title">COMPUTER SKILLS</span></p>
+        <ul class="bullet-list">
+            <li>Working knowledge in C, Basic knowledge in SQL and Python</li>
+            <li>2d Autocad, Matlab/Simulink, N.I. Labview, Eagle PCB Design, PSPICE circuit simulation</li>
+            <li>MS Word, Excel, PowerPoint, Outlook, Visio</li>
+        </ul>
+
+        <p><span class="section-title">PROFESSIONAL EDUCATION SEMINARS & CONFERENCES</span></p>
+        <ul class="bullet-list">
+            <li>INTERNET OF THINGS AND MACHINE LEARNING APPLICATIONS, University of Athens, April 2021 (75 hours)</li>
+            <li>DATABASE SOLUTIONS FOR SQL SERVER, TUV HELLAS, March 2021 (100 hours)</li>
+            <li>WEB DEVELOPMENT: HTML5 & JAVASCRIPT, University of Athens, Dec 2020 – Feb 2021</li>
+            <li>EMC Design for Compliance, EMC FASTPASS, July 2020</li>
+            <li>AUTODESK/AUTOCAD, Training and certification, March 2020</li>
+            <li>EU CE Marking, Labor S.A., October 2019</li>
+            <li>ATEX Seminar, TUV Austria, April 2019</li>
+            <li>ISO 9001:2015 Appreciation and Internal Auditor, March 2019</li>
+            <li>ECDL, Ms Word-Excel-PowerPoint-Outlook 2007, Dec 2014</li>
+        </ul>
+
+        <p><span class="section-title">PARTICIPATION IN R&D PROJECTS</span></p>
+        <ul class="bullet-list">
+            <li>R&D project “sPrismoid”, Prisma Electronics and NTUA collaboration, Marine vessel data acquisition</li>
+            <li>SELECTRON SA, Design of new digital level sensors with ATEX/IECEx certification</li>
+            <li>Work placement in L2eP laboratory, Topic: “Control gate circuits of SiC-JFET”, March 2011</li>
+        </ul>
+
+        <p><span class="section-title">FOREIGN LANGUAGES</span></p>
+        <ul class="bullet-list">
+            <li>English – Certificate in Proficiency in English ECPE (C2) University of Michigan</li>
+            <li>French – Basic knowledge (B1)</li>
+        </ul>
     </div>
 </body>
 </html>

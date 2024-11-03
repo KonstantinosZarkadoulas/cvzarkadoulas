@@ -20,6 +20,7 @@
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Light shadow for elevation */
+            position: relative; /* To position the image absolutely */
         }
         .section-title {
             font-weight: bold;
@@ -50,11 +51,22 @@
             left: 0;
             font-size: 1.2em;
         }
+        /* Style for the image */
+        .profile-image {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            width: 100px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 50%; /* Makes the image circular */
+            border: 2px solid #00796b; /* Optional border */
+        }
     </style>
 </head>
 <body>
     <h1>CV of Konstantinos Zarkadoulas</h1>
     <div class="content">
+        <img src="https://github.com/KonstantinosZarkadoulas/cvzarkadoulas/blob/main/ZARKADOULAS%20PHOTO%20(1).jpg" alt="Profile Photo" class="profile-image">
         <p><span class="section-title">NAME:</span> KONSTANTINOS ZARKADOULAS</p>
 
         <p><span class="section-title">PERSONAL INFORMATION</span></p>

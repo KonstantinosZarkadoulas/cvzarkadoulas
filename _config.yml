@@ -1,0 +1,6 @@
+title: "CV of Konstantinos Zarkadoulas"
+description: "Professional CV"
+baseurl: ""
+url: "https://<your-github-username>.github.io/<your-repository-name>"
+markdown: kramdown
+theme: minima

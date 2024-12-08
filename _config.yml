@@ -1,6 +1,6 @@
 title: "CV of Konstantinos Zarkadoulas"
 description: "Professional CV"
-baseurl: ""
-url: "https://<your-github-username>.github.io/<your-repository-name>"
+baseurl: "/cvzarkadoulas" # Set this to your repository name
+url: "https://KonstantinosZarkadoulas.github.io" # Replace with your GitHub Pages URL
 markdown: kramdown
 theme: minima
